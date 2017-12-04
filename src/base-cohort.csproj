@@ -18,20 +18,10 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
-  <ItemGroup>
 
-    <!-- XXX: Not sure if this is still needed in .Net Core 2.0 -->
-    <!-- 
-    <Reference Include="System.Data.DataSetExtensions">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    -->
-  </ItemGroup>
-  
-  <!-- Fix these to use NuGet this once we package things properly. -->
   <ItemGroup>
-    <ProjectReference Include="../../landis-core-model/model/core/src/Core.csproj" />
-    <ProjectReference Include="../../Library-Spatial/src/api/Landis_SpatialModeling.csproj" />
+    <PackageReference Include="Landis.Core" Version="1.0.0-CI00001" />
+    <PackageReference Include="Landis.SpatialModeling" Version="1.0.0-CI00001" />
   </ItemGroup>
   
   <ItemGroup>
